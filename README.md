@@ -1,34 +1,30 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# importing
 
-## Getting Started
+npm install react-icons
+npm install framer-motion
 
-First, run the development server:
+1. motion component use use-effect. so whenever we use motion component from framer motion then we have to convert that page into client component by "use client" placing at the top.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+2. we are going to use react-intersection-observer package to track the viewport.
+   (npm install react-intersection-observer --save)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. react-vertical-timeline-component => for experience component.
+   => we can't use tailwind with it
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# Email
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+4. for form submission we are going to use server actions
+   => we don't need to use api routes.
+   => we are going to use resend for sending email.
+   Api key => re_3YEJ7URQ_21BPGML1z8Xf8Gp9zX712uu8
 
-## Learn More
+   package name => npm i resend@0.16.0
 
-To learn more about Next.js, take a look at the following resources:
+=> if you want to style you email then use react-email
+cmd => npm install @react-email/components @react-email/tailwind
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+=>React hot toast is library that we are going to use to handle with feedback. :-> npm i react-hot-toast
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+# dark theme
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+=> window.matchMedia("(prefers-color-scheme :dark)").matches := to check the theme of your system.
