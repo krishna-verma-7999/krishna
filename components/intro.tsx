@@ -13,10 +13,11 @@ import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import useContentHook from "@/lib/content-hook";
 import { PortableText } from "@portabletext/react";
+import { PortableTextBlock } from "sanity";
+
 const Intro = () => {
   const { ref } = useSectionInView("Home", 0.5);
   const { aboutData } = useContentHook();
-  const coverText = aboutData?.cover_text;
 
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
   return (
@@ -68,7 +69,7 @@ const Intro = () => {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <PortableText value={coverText} />
+        <PortableText value={aboutData?.cover_text} />
       </motion.h1>
 
       <motion.div
