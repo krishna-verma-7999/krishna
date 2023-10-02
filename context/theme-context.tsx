@@ -5,7 +5,7 @@ import React, { useContext, useEffect, useState } from "react";
 type Theme = "light" | "dark";
 
 type ThemeContextType = {
-  theme: Theme;
+  theme: Theme | null;
   toggleTheme: () => void;
 };
 
