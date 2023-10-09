@@ -13,10 +13,9 @@ import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import useContentHook from "@/lib/content-hook";
 import { PortableText } from "@portabletext/react";
-import { PortableTextBlock } from "sanity";
 
 const Intro = () => {
-  const { ref } = useSectionInView("Home", 0.5);
+  const { ref } = useSectionInView("Home", 0.1);
   const { aboutData } = useContentHook();
 
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
