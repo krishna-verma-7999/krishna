@@ -5,11 +5,10 @@ import { Resend } from "resend";
 import { getErrorMessage, validateString } from "@/lib/utils";
 import ContactFormEmail from "@/email/contact-form-email";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+// const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend("re_DE71ZhNL_76iGLKAVE2ssgNy87D1vkp3q");
 
 export const sendEmail = async (formData: FormData) => {
-  console.log("Running on server");
-
   const message = formData.get("message");
   const senderEmail = formData.get("SenderEmail");
 
