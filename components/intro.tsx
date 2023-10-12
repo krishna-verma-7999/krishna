@@ -15,7 +15,7 @@ import useContentHook from "@/lib/content-hook";
 import { PortableText } from "@portabletext/react";
 
 const Intro = () => {
-  const { ref } = useSectionInView("Home", 0.1);
+  const { ref } = useSectionInView("Home", 0.3);
   const { aboutData } = useContentHook();
 
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();

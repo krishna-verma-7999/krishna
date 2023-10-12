@@ -8,8 +8,7 @@ import useContentHook from "@/lib/content-hook";
 import { PortableText } from "@portabletext/react";
 
 const About = () => {
-  const { ref } = useSectionInView("About", 1);
-  const { aboutData } = useContentHook();
+  const { ref } = useSectionInView("About", 0.9);
 
   return (
     <motion.section
@@ -22,7 +21,18 @@ const About = () => {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        <PortableText value={aboutData?.about} />
+        Currently I'm pursuing my degree in Btech CSE AI, After 12th I decided
+        to pursue my passion for programming. I enrolled in a coding bootcamp
+        and learned{" "}
+        <span className="font-bold">full-stack web development</span>.{" "}
+        <span className="italic">My favorite part of programming</span> is the
+        problem-solving aspect. I love the feeling of finally figuring out a
+        solution to a problem. My core stack is{" "}
+        <span className="font-bold">React, Next.js, Node.js, and MongoDB</span>.
+        I am also familiar with TypeScript and Prisma. I am always looking to
+        learn new technologies. I am currently looking for a{" "}
+        <span className="font-bold">full-time position</span>
+        as a software developer.
       </p>
     </motion.section>
   );

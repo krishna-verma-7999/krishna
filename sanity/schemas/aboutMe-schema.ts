@@ -17,22 +17,10 @@ const about = {
       ],
     },
     {
-      name: "cover_text",
-      title: "Cover Text",
-      type: "array",
-      of: [{ type: "block" }],
-    },
-    {
       name: "skills",
       title: "Skills",
       type: "array",
       of: [{ type: "string" }],
-    },
-    {
-      name: "about",
-      title: "About",
-      type: "array",
-      of: [{ type: "block" }],
     },
   ],
 };
