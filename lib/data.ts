@@ -7,7 +7,7 @@ import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 
-import myImg from "@/public/kriss.jpg";
+import myImg from "@/public/kriss.jpeg";
 
 export const krishna = myImg;
 
